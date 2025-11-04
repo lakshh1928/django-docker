@@ -1,30 +1,22 @@
-# Simple Notes App for TWS Community
-This is a simple notes app built with React and Django.
+Django Notes App with MySQL and Nginx
 
-## Requirements
-1. Python 3.9
-2. Node.js
-3. React
+This project demonstrates running Django and MySQL in separate Docker containers on the same network and deploying a website locally using Nginx.
 
-## Installation
-1. Clone the repository
-```
-git clone https://github.com/LondheShubham153/django-notes-app.git
-```
+Features:
 
-2. Build the app
-```
-docker build -t notes-app .
-```
+Django application containerized with Docker
 
-3. Run the app
-```
-docker run -d -p 8000:8000 notes-app:latest
-```
+MySQL database container
 
-## Nginx
+Both containers connected via a custom Docker network
 
-Install Nginx reverse proxy to make this application available
+Nginx used as a reverse proxy to serve the Django app on localhost
 
-`sudo apt-get update`
-`sudo apt install nginx`
+Acknowledgements:
+This project was made with the help of TrainWithShubham.
+
+How to Run:
+
+Build and start the containers by running: docker-compose up --build
+
+Access the website locally at http://localhost:80
