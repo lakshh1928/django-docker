@@ -19,4 +19,4 @@ How to Run:
 
 Build and start the containers by running: docker-compose up --build
 
-Access the website locally at http://localhost:80
+Access the website locally at http://localhost:80 
